@@ -1,0 +1,27 @@
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="offer_background_gradient_start">#FF3700B3</color>
+    <color name="offer_background_gradient_end">#FF6200EE</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+    <color name="merron">#800000</color>
+    <color name="black">#FFFFFF</color>
+    <color name="white_selected">#f0f0f0</color>
+    <color name="blue_focused">#BF32AFF3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="beige">#FBFCC8</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="movie_title_color">#fff</color>
+    <color name="black_two">#151515</color>
+    <color name="common_dash">#303030</color>
+    <color name="greyish">#aaaaaa</color>
+    <color name="transparent">#00131313</color>
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    android:padding="8dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@+id/profile_button">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/title_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_back_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back_arrow"/>
+
+                <TextView
+                    android:id="@+id/edit_profile_screen_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/profile_back_icon"
+                    android:text="Add Profile"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/title_tool_bar"
+                android:id="@+id/profile_image_layout"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true">
+
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="132dp"
+                    android:layout_height="132dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/defaultprofile" />
+
+                <ImageView
+                    android:id="@+id/profile_image_edit"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:src="@drawable/profile_image_edit_icon" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/enter_name_text"
+                android:layout_below="@+id/profile_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Enter Name"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enter_name_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#ffc900"
+                android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM "
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName|textCapWords|textNoSuggestions"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@drawable/profile_cursor_drawable"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/contact_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_edit_text"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/adult_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@+id/contact_type_switch"
+                    android:text="Adult"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/contact_type_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/kids_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/contact_type_switch"
+                    android:text="KIDS"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/age_group_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_type_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Select your age group (in years)"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textColor="#aaaaaa" />
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/age_group_text"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Under 7"
+                    android:id="@+id/radioButton"
+                    android:layout_marginStart="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="true"
+                    android:textSize="25dp"
+                    android:layout_weight="0.25"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Under 11"
+                    android:id="@+id/radioButton2"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false"
+                    android:layout_marginStart="30dp"
+                    android:textSize="25dp"
+                    android:layout_weight="0.25" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Under 15"
+                    android:id="@+id/radioButton3"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false"
+                    android:layout_marginStart="30dp"
+                    android:textSize="25dp"
+                    android:layout_weight="0.25"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Under 18"
+                    android:id="@+id/radioButton4"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false"
+                    android:layout_marginStart="30dp"
+                    android:textSize="25dp"
+                    android:layout_weight="0.25" />
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="Add"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:elevation="0dp"
+    app:cardBackgroundColor="@color/lb_grey"
+    android:layout_width="240dp"
+    android:layout_height="160dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="fitXY" />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:visibility="visible"
+            android:id="@+id/card_content_progress"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:ellipsize="end"
+            android:text="Default"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/selected_background"
+            android:textColor="@color/lb_error_background_color_opaque" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_profile_container"
+    android:layout_width="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/portrait_card"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:backgroundTint="#8C2c2c2c"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/add_icon" />
+
+                <TextView
+                    android:id="@+id/add_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/add"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#777777"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/overlay_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/kid_overlay_text_backgroung"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="KIDS"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/overlay_text_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="108dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/kid_age_overlay_text_backgroung"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Under 7 years"
+                    android:textColor="#151515"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/edit_overlay"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/kebab_menu_bg"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="20dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/edit_icon"/>
+
+
+                        <TextView
+                            android:id="@+id/edit_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_edit"
+                            android:layout_marginStart="2dp"
+                            android:text="Edit"
+                            android:textColor="@android:color/white" />
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_name"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/portrait_card"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+</LinearLayout>

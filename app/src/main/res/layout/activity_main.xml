@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_activity_parent_layout"
+    android:background="@drawable/gradiant_semi_transperent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:src="@mipmap/ic_logo"/>
+
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/menu_adapter"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logo"
+        android:focusable="true"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <FrameLayout
+        android:id="@+id/main_browse_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/menu_adapter"
+        android:nextFocusLeft="@id/menu_adapter"
+        tools:context=".MainActivity"
+        tools:deviceIds="tv"
+        tools:ignore="MergeRootFrame" />
+</RelativeLayout>

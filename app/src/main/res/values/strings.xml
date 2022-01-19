@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">KotlinTv</string>
+    <string name="browse_title">Videos by Your Company</string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+    <string name="upcoming">Upcoming</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dialog_option">%1$dp - %2$s</string>
+    <string name="item_download_percentage">Size: %1$s | Progress: %2$d %%</string>
+
+    <string name="download_start_error">Failed to start download</string>
+    <string name="exo_download_queued">Download in queue</string>
+    <string name="exo_download_stopped">Download stopped</string>
+    <string name="exo_download_restarting">Download restarting</string>
+
+    <string name="track_selection_title">Video Quality</string>
+    <string name="ad_tag_url"><![CDATA[https://pubads.g.doubleclick.net/gampad/ads?iu=/423477888/SonyLiv/SonyLiv_Video_Android_TV&url=com.sonyliv&description_url=http%3A%2F%2Fwww.sonyliv.com%2Fdetails%2F%2F1000134290%2FSuper-Dancer&cmsid=2530476&env=vp&impl=s&correlator=1234&tfcd=0&npa=0&gdfp_req=1&output=vmap&sz=640x480&unviewed_position_start=1&vid=1000134290&cust_params=age%3D19-23%26gen%3DMale%26ust%3Dn%26lng%3Den_US%26pt%3Dandtv%26spty%3D%26app_version%3D6.11.9]]></string>
+    <string name="string_movies">Movies</string>
+    <string name="txt_zero">00:00</string>
+    <string name="text_emailId">Email ID Here</string>
+    <string name="txt_profile">Profile</string>
+
+    <string name="string_Offers">Offers</string>
+    <string name="offer_coupon_txt">Do you have a coupon?</string>
+    <string name="activate_offer">Activate the offer now!</string>
+    <string name="activate_offer_btn_txt">Activate offer</string>
+    <string name="activate_offer_hint">Enter the code</string>
+    <string name="txt_valid_till"> valid_till</string>
+
+
+
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+</resources>

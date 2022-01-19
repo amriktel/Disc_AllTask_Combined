@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KotlinTv.iml" filepath="$PROJECT_DIR$/.idea/modules/KotlinTv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KotlinTv.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KotlinTv.app.iml" />
+    </modules>
+  </component>
+</project>
